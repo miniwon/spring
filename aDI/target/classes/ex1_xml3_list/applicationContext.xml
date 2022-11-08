@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<bean id='bean' class="ex1_xml3_list.ListBean">
+<!-- name 꼭 beav변수이림과 동일하게 -->
+
+   <property name="intList"> <!-- 즉 setIntList() 호출한다는의미 -->
+      <list>
+            <value>22</value>
+            <value>33</value>
+            <value>44</value>
+      </list>
+   </property>
+   
+   <property name="memberList"> <!-- 셋멤버리스트 호출임 -->
+      <list>
+         <ref bean='m1'/>
+         <ref bean='m2'/>
+         <!-- 아이디값 없이 한번에도 가능 -->
+         <bean class = "ex1_xml3_list.MemberBean" >
+            <!-- 무명빈은 생성자나 세터로 값지정 -->
+            <property name="name" value='Hong'></property>
+            <property name="age" value='40'></property>
+            <property name="message" value='힘내랑'></property>
+         </bean>
+      </list>
+   </property>
+</bean>
+
+
+<bean id ='m1' class = "ex1_xml3_list.MemberBean">
+   <!--  생성자로 값 지정해보기 -->
+   <constructor-arg value="홍길동"/>
+   <constructor-arg value="25"/>
+   <constructor-arg value="안녕"/>
+</bean>
+
+
+<bean id ='m2' class = "ex1_xml3_list.MemberBean">
+<!-- 겟세터로지정 -->
+   <property name="name" value='홍길자'></property>
+   <property name="age" value='30'></property>
+   <property name="message" value='힘내'></property>
+</bean>
+
+
+
+
+</beans>
