@@ -6,7 +6,7 @@ public class MemberDAO {
 	
 	public void isnert() {
 	    member.output();
-	    System.out.println("ÀúÀåÇÏ¿´½À´Ï´Ù");
+	    System.out.println("ì €ì¥í•˜ì˜€ìŠµë‹ˆë‹¤");
 	}
 	   
 

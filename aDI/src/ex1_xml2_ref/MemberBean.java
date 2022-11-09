@@ -5,22 +5,23 @@ public class MemberBean {
 	private int 	age;
 	private String  message;
 	
-	//-----------------------
+	// ë©”ì„œë“œ
 	public void output() {
 		System.out.println(name +"["+ age +"]"+ message);
 	}
 	
+	// ê¸°ë³¸ ìƒì„±ì
 	public MemberBean() {
-		System.out.println("±âº»»ı¼ºÀÚ");
+		System.out.println("MemberBean ê¸°ë³¸ ìƒì„±ì");
 	}
 	
-	// »ı¼ºÀÚ ÇÔ¼ö
+	// ì¸ì ìˆëŠ” ìƒì„±ì
 	public MemberBean(String name, int age, String message) {
 		super();
 		this.name = name;
 		this.age = age;
 		this.message = message;
-		System.out.println("ÀÎÀÚÀÖ´Â »ı¼ºÀÚ");
+		System.out.println("MemberBean ì¸ì ìˆëŠ” ìƒì„±ì");
 	}
 	
 	// setter, getter

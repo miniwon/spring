@@ -2,12 +2,18 @@
 <section name="Workbench">
 	<section name="wizardPage">
 		<list key="groupId">
+			<item value="eSpringMybatis"/>
+			<item value="cAOP"/>
+			<item value="bDIExerciseDB"/>
 			<item value="aDIHW"/>
 			<item value="aDI"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="eSpringMybatis"/>
+			<item value="cAOP"/>
+			<item value="bDIExerciseDB"/>
 			<item value="aDIHW"/>
 			<item value="aDI"/>
 		</list>

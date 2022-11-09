@@ -5,11 +5,11 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class MainApp {
 	public static void main(String[] args) {
-		// [1] ½ºÇÁ¸µ ¼³Á¤ ÆÄÀÏ ¿¬°á
+		// [1] ìŠ¤í”„ë§ ì„¤ì • íŒŒì¼ ì—°ê²°
 			ApplicationContext context =
 				new ClassPathXmlApplicationContext("ex1_xml2_ref/applicationContext.xml");
 		
-		// [2] ºó °¡Á®¿À±â
+		// [2] ë¹ˆ ê°€ì ¸ì˜¤ê¸°
 			MemberBean bean = context.getBean("member", MemberBean.class);
 			bean.output();
 			
