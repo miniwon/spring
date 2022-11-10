@@ -29,5 +29,6 @@
 <aop-project name="bDIExerciseDB"/>
 <aop-project name="aDI"/>
 <aop-project name="eSpringMybatis"/>
+<aop-project name="bMybatisHW"/>
 <aop-project name="aDIHW"/>
 </aop-reference-model>
